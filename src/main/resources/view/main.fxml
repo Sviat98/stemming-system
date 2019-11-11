@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox id="root-pane" alignment="CENTER" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bsuir.stemming.controller.MainController">
+    <HBox id="min-rank-hbox" alignment="TOP_CENTER">
+        <Button onAction="#loadFile" text="Load file" />
+        <Label fx:id="filePathLabel" alignment="TOP_CENTER" text="файл не выбран" />
+        <Button onAction="#controlShowingHelp" text="Help" />
+
+       
+    </HBox>
+   <RadioButton fx:id="spanishButton" mnemonicParsing="false" text="Spanish">
+      <toggleGroup>
+         <ToggleGroup fx:id="group1" />
+      </toggleGroup>
+   </RadioButton>
+   <RadioButton fx:id="germanButton" mnemonicParsing="false" text="German" toggleGroup="$group1" />
+    <Button alignment="BOTTOM_CENTER" onAction="#controlStemming" onKeyPressed="#controlStemming" text="Do stemming" />
+
+
+
+
+
+</VBox>

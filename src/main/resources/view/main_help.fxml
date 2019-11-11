@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<VBox xmlns="http://javafx.com/javafx"
+      id="root-pane" alignment="CENTER">
+    <ImageView>
+        <Image url="@/image/main_help.png"/>
+    </ImageView>
+    <Label id="image-annotation">
+        1 - Input min rank of result document
+    </Label>
+    <Label id="image-annotation">
+        2 - Press to show help
+    </Label>
+    <Label id="image-annotation">
+        3 - Input search query
+    </Label>
+    <Label id="image-annotation">
+        4 - Press to search (or press 'ENTER')
+    </Label>
+</VBox>
